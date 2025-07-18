@@ -1,70 +1,147 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rajkumar Valusa | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .project, .cert {
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>👋 Hi, I’m Rajkumar Valusa</h1>
+    <p><strong>DevOps Engineer | Cloud Enthusiast | Automation Fanatic</strong></p>
+    <p>📄 <a href="#">Download My CV</a></p>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>👋 Hi, I’m <span>Rajkumar Valusa</span></h1>
-    <p>DevOps Engineer | Cloud Enthusiast | Automation Fanatic</p>
-    <a href="rajkumar-valusa-cv.pdf" class="btn" download>📄 Download My CV</a>
-  </section>
+    <div class="section">
+      <h2>💼 Projects</h2>
 
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h2>💼 Projects</h2>
-
-    <div class="project">
-      <h3>Mock Payment API</h3>
-      <p>Dockerized Node.js payment simulation service deployed on EC2 with CI/CD via GitHub Actions and Nginx reverse proxy.</p>
-      <p><strong>Tech:</strong> Node.js, Docker, EC2, GitHub Actions, Nginx</p>
-      <a href="http://YOUR_EC2_PUBLIC_IP" target="_blank">🔗 Live Demo</a>
-      <a href="https://github.com/rajkumar3130/mock-payment-api" target="_blank">📁 GitHub</a>
-    </div>
-<div class="project">
-        <h3>CI/CD Pipeline (Demo)</h3>
-        <p>CI/CD pipeline for building, testing, and deploying Docker apps using GitHub Actions.</p>
-        <a href="https://github.com/rajkumar3130/mock-payment-api/actions" target="_blank">CI/CD Workflow</a>
+      <div class="project">
+        <h3>Mock Payment API</h3>
+        <p>Dockerized Node.js payment simulation service deployed on EC2 with CI/CD via GitHub Actions and Nginx reverse proxy.<br>
+        <strong>Tech:</strong> Node.js, Docker, EC2, GitHub Actions, Nginx<br>
+        📁 <a href="https://github.com/rajkumar3130/mock-payment-api">GitHub</a></p>
       </div>
 
+      <div class="project">
+        <h3>CI/CD Pipeline (Demo)</h3>
+        <p>CI/CD pipeline for building, testing, and deploying Docker apps using GitHub Actions.<br>
+        📁 <a href="https://github.com/rajkumar3130/cicd-pipeline-demo">GitHub</a></p>
+      </div>
+
+      <div class="project">
+        <h3>🚀 Project Complete: DevOps Task Manager 🎉</h3>
+        <p>Just wrapped up an end-to-end DevOps project from scratch:
+          <ul>
+            <li>Frontend in React (Vite)</li>
+            <li>Backend with Express.js</li>
+            <li>Dockerized both services + Nginx reverse proxy</li>
+            <li>HTTPS with Let's Encrypt (Certbot)</li>
+            <li>CI/CD pipeline via GitHub Actions</li>
+            <li>Live Deployment on AWS EC2 (Ubuntu)</li>
+            <li>Domain + SSL via GoDaddy: <a href="https://examplehub.xyz">examplehub.xyz</a></li>
+          </ul>
+          <strong>Tools used:</strong> Docker, Nginx, AWS, GitHub Actions, Certbot, GoDaddy DNS<br>
+          🔍 <a href="https://github.com/rajkumar3130/devops-task-manager">Check it out</a>
+        </p>
+      </div>
     </div>
 
-  </section>
+    <div class="section">
+      <h2>🛠 Skills</h2>
+      <ul>
+        <li>AWS EC2, S3, Route 53, IAM</li>
+        <li>Docker, GitHub Actions, Nginx</li>
+        <li>Terraform, Ansible</li>
+        <li>JavaScript, Node.js, Linux</li>
+      </ul>
+    </div>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <h2>🛠 Skills</h2>
-    <ul>
-      <li>AWS EC2, S3, Route 53, IAM</li>
-      <li>Docker, GitHub Actions, Nginx</li>
-      <li>Terraform, Ansible (if applicable)</li>
-      <li>JavaScript, Node.js, Linux</li>
-    </ul>
-  </section>
+    <div class="section">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>M.Sc. in Advanced Computer Science</strong>, University of East London — 2022</li>
+        <li><strong>Bachelors in Computer Science and Engineering</strong>, Kamala Institute of Technology and Science — 2019</li>
+      </ul>
+    </div>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>👨‍💼 About Me</h2>
-    <p>
-      I’m a DevOps engineer who loves building, deploying, and optimizing cloud infrastructure and CI/CD pipelines. 
-      My passion lies in automating workflows and delivering scalable services. This site showcases my practical experience and projects.
-    </p>
-  </section>
+    <div class="section">
+      <h2>🏅 Certifications</h2>
+      <ul>
+        <li><strong>Kubernetes: Basic Architecture and First Deployment</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/E9U3SBLALRZ8">View Certificate</a></li>
+        <li><strong>AWS: Networking</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Kubernetes: Native Tools</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Kubernetes: The Documentary</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Kubernetes: Your First Project</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Learning Kubernetes</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Securing Containers and Kubernetes Ecosystem</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Containerization</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Introduction to DevOps</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Python Project for AI & Application Development</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Getting Started with Git and GitHub</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Hands-on Introduction to Linux Commands and Shell Scripting</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Introduction to Agile Development and Scrum</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Introduction to Cloud Computing</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>Python for Data Science, AI & Development</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>DevOps on AWS Specialization</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>DevOps on AWS: Release and Deploy</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>DevOps on AWS: Code, Build and Test</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>DevOps on AWS: Operate and Monitor</strong> — <a href="#">View Certificate</a></li>
+        <li><strong>AWS Cloud Technical Essentials</strong> — <a href="#">View Certificate</a></li>
+      </ul>
+    </div>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:rajkumarvalusa@example.com">rajkumarvalusa@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/rajkumar3130" target="_blank">github.com/rajkumar3130</a></p>
-  </section>
-
+    <div class="section">
+      <h2>📬 Contact</h2>
+      <ul>
+        <li><strong>Email:</strong> rajvalusa33@gmail.com</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/rajkumar3130">github.com/rajkumar3130</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/raj-valusa-ba7508208">linkedin.com/in/raj-valusa-ba7508208</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
 

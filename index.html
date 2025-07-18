@@ -1,52 +1,75 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajkumar Valusa | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajkumar Valusa | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>👨‍💻 Rajkumar Valusa</h1>
-      <p>DevOps Engineer | Cloud Enthusiast | Open Source Contributor</p>
-    </div>
-  </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p> Results-oriented IT professional with expertise in DevOps, cloud infrastructure, and Workday analysis, seeking to
-contribute to organizational success by leveraging skills in Azure, AWS, Kubernetes, and CI/CD pipelines.</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>👋 Hi, I’m <span>Rajkumar Valusa</span></h1>
+    <p>DevOps Engineer | Cloud Enthusiast | Automation Fanatic</p>
+    <a href="rajkumar-valusa-cv.pdf" class="btn" download>📄 Download My CV</a>
   </section>
 
-  <section class="projects container">
-    <h2>Projects</h2>
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>💼 Projects</h2>
+
+    <div class="project">
+      <h3>Mock Payment API</h3>
+      <p>Dockerized Node.js payment simulation service deployed on EC2 with CI/CD via GitHub Actions and Nginx reverse proxy.</p>
+      <p><strong>Tech:</strong> Node.js, Docker, EC2, GitHub Actions, Nginx</p>
+      <a href="http://YOUR_EC2_PUBLIC_IP" target="_blank">🔗 Live Demo</a>
+      <a href="https://github.com/rajkumar3130/mock-payment-api" target="_blank">📁 GitHub</a>
+    </div>
+<div class="project">
+        <h3>CI/CD Pipeline (Demo)</h3>
+        <p>CI/CD pipeline for building, testing, and deploying Docker apps using GitHub Actions.</p>
+        <a href="https://github.com/rajkumar3130/mock-payment-api/actions" target="_blank">CI/CD Workflow</a>
+      </div>
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This responsive site is built with HTML & CSS, hosted on GitHub Pages.</p>
+        <a href="https://rajkumar3130.github.io/portfolio-website" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <h2>🛠 Skills</h2>
     <ul>
-      <li>
-        <strong>Mock Payment API</strong><br />
-        A Node.js API dockerized, deployed with GitHub Actions CI/CD, reverse proxied with Nginx & HTTPS.
-      </li>
-      <li>
-        <strong>AWS EC2 Terraform</strong><br />
-        Infrastructure as code project to deploy EC2 with key-pairs and security groups using Terraform.
-      </li>
+      <li>AWS EC2, S3, Route 53, IAM</li>
+      <li>Docker, GitHub Actions, Nginx</li>
+      <li>Terraform, Ansible (if applicable)</li>
+      <li>JavaScript, Node.js, Linux</li>
     </ul>
   </section>
 
-  <section class="contact container">
-    <h2>Contact</h2>
-    <p>Email: rajvalusa33@gmail.com@example.com</p>
-    <p>GitHub: <a href="https://github.com/rajkumar3130">github.com/rajkumar3130</a></p>
-  </section>
- <section>
-    <h2>Download My CV</h2>
-    <a href="rajkumar-valusa-cv.pdf" download class="btn">📄 Download My CV</a>
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>👨‍💼 About Me</h2>
+    <p>
+      I’m a DevOps engineer who loves building, deploying, and optimizing cloud infrastructure and CI/CD pipelines. 
+      My passion lies in automating workflows and delivering scalable services. This site showcases my practical experience and projects.
+    </p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Rajkumar Valusa</p>
-  </footer>
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:rajkumarvalusa@example.com">rajkumarvalusa@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/rajkumar3130" target="_blank">github.com/rajkumar3130</a></p>
+  </section>
+
 </body>
 </html>
 

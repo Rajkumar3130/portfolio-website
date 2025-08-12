@@ -1,158 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rajkumar Valusa | DevOps Engineer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rajkumar Valusa — Senior Cloud & DevOps Engineer</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
+    :root{
+      --azure:#0078d7;
+      --muted:#6b7280;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --accent:#0b63b1;
+      --maxw:900px;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.8);
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1, h2, h3 {
-      color: #222;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .project, .cert {
-      margin-bottom: 1rem;
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#0f172a; margin:0; padding:40px; display:flex; justify-content:center}
+    .wrap{max-width:var(--maxw); width:100%}
+    .card{background:linear-gradient(180deg,var(--card), #fbfdff); border-radius:var(--radius); box-shadow:0 6px 30px rgba(12,24,40,0.08); padding:28px}
+    header{display:flex; align-items:center; gap:20px}
+    .avatar{width:84px; height:84px; border-radius:10px; background:linear-gradient(135deg,var(--azure),var(--accent)); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:34px}
+    h1{margin:0; font-size:20px}
+    .title{color:var(--azure); font-weight:700}
+    .sub{color:var(--muted); margin-top:6px}
+
+    .grid{display:grid; grid-template-columns:1fr 320px; gap:22px; margin-top:18px}
+    main{padding-right:6px}
+    aside{background:linear-gradient(180deg, rgba(11,99,177,0.04), rgba(7,59,102,0.02)); border-radius:10px; padding:18px}
+
+    section{margin-bottom:18px}
+    h2{font-size:14px; margin:0 0 8px 0; color:var(--azure)}
+    p.lead{margin:0 0 8px 0; color:#0b1220}
+    ul{margin:8px 0 0 0; padding:0; list-style:none}
+    li{margin-bottom:8px; color:#0e1724}
+    .muted{color:var(--muted); font-size:13px}
+
+    .pill{display:inline-block; background:#eef6ff; color:var(--accent); padding:6px 10px; border-radius:999px; font-size:13px; margin:6px 6px 6px 0}
+    .skill-grid{display:flex; flex-wrap:wrap}
+
+    .project{background:var(--glass); border-radius:8px; padding:10px; margin-bottom:10px}
+    .meta{font-size:13px; color:var(--muted)}
+
+    .contact{display:flex; flex-direction:column; gap:8px}
+    .btn{display:inline-block; background:var(--azure); color:white; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600}
+
+    footer{margin-top:12px; display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      body{padding:18px}
+      .grid{grid-template-columns:1fr;}
+      aside{order:2}
+      header{gap:12px}
+      .avatar{width:64px;height:64px;font-size:28px}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>👋 Hi, I’m Rajkumar Valusa</h1>
-    <p><strong>DevOps Engineer | Cloud Enthusiast | Automation Fanatic</strong></p>
-    <p> <a href="rajkumar-valusa-cv.pdf" target="_blank">📄 View My CV</a>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar">RV</div>
+        <div>
+          <h1>Rajkumar Valusa <span class="title">— Senior Cloud & DevOps Engineer</span></h1>
+          <div class="sub muted">Azure • Kubernetes • Terraform • CI/CD • SRE</div>
+        </div>
+        <div style="margin-left:auto; text-align:right">
+          <div class="muted">Email</div>
+          <div style="font-weight:700">rajkumarvalusa30@gmail.com</div>
+          <div class="muted" style="margin-top:6px">Phone</div>
+          <div style="font-weight:700">+91 82472 19002</div>
+        </div>
+      </header>
 
+      <div class="grid">
+        <main>
+          <section>
+            <h2>Professional Snapshot</h2>
+            <p class="lead">Cloud & DevOps Engineer with <strong>5+ years</strong> of hands-on experience building secure, automated, and scalable infrastructure on Microsoft Azure. I design resilient CI/CD workflows, automate infrastructure with Terraform, and run production-grade Kubernetes clusters (AKS) for enterprise customers.</p>
+          </section>
 
-    <div class="section">
-      <h2>💼 Projects</h2>
+          <section>
+            <h2>Core Strengths</h2>
+            <div class="skill-grid">
+              <span class="pill">Azure (AKS, Functions, App Service)</span>
+              <span class="pill">Terraform & ARM</span>
+              <span class="pill">Azure DevOps & Jenkins</span>
+              <span class="pill">Docker & Kubernetes</span>
+              <span class="pill">Ansible & Shell</span>
+              <span class="pill">Kibana & Monitoring</span>
+              <span class="pill">Networking & Security</span>
+            </div>
+          </section>
 
-      <div class="project">
-        <h3>Mock Payment API</h3>
-        <p>Dockerized Node.js payment simulation service deployed on EC2 with CI/CD via GitHub Actions and Nginx reverse proxy.<br>
-        <strong>Tech:</strong> Node.js, Docker, EC2, GitHub Actions, Nginx<br>
-        📁 <a href="https://github.com/rajkumar3130/mock-payment-api">GitHub</a></p>
+          <section>
+            <h2>Impact & Achievements</h2>
+            <ul>
+              <li><strong>100% AKS pipeline stability</strong>—resource tuning, probes, and Helm optimizations for production workloads.</li>
+              <li><strong>25% cloud cost savings</strong>—automated VM shutdowns using Azure Automation triggered by CPU utilization.</li>
+              <li><strong>40% faster release cycles</strong>—end-to-end CI/CD automation with quality and security gates.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Featured Projects</h2>
+            <div class="project">
+              <div style="font-weight:700">Johnson & Johnson — Azure Cloud Modernization</div>
+              <div class="meta">Terraform • AKS • Azure DevOps • PowerShell</div>
+              <div style="margin-top:8px" class="muted">Provisioned secure VNets, automated infra with Terraform, and deployed containerized apps to AKS with CI/CD pipelines.</div>
+            </div>
+
+            <div class="project">
+              <div style="font-weight:700">Nissan Motors — Azure Infrastructure Automation</div>
+              <div class="meta">Terraform • ARM Templates • Kubernetes</div>
+              <div style="margin-top:8px" class="muted">Automated VM lifecycle, managed AD Connect & networking, and built production-ready CI/CD pipelines.</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Professional Experience</h2>
+            <div style="font-weight:700">Globus Info Services Pvt Ltd — Senior Cloud & DevOps Engineer</div>
+            <div class="meta">Aug 2020 — Present</div>
+            <ul>
+              <li>Architected and managed Azure IaaS/PaaS environments for enterprise clients.</li>
+              <li>Built CI/CD pipelines, automated deployments, and delivered SRE support.</li>
+              <li>Collaborated with cross-functional teams to ensure zero-downtime releases and smooth cutovers.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+            <div>B.Tech — KITS, Huzurabad (2019)</div>
+          </section>
+        </main>
+
+        <aside>
+          <section>
+            <h2>Contact</h2>
+            <div class="contact">
+              <div><strong>Email:</strong> rajkumarvalusa30@gmail.com</div>
+              <div><strong>Phone:</strong> +91 82472 19002</div>
+              <div><strong>Location:</strong> India</div>
+              <a class="btn" href="mailto:rajkumarvalusa30@gmail.com?subject=Azure%20Engineer%20Opportunity">Contact / Email</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>Certifications (Planned)</h2>
+            <ul>
+              <li>AZ-104: Microsoft Azure Administrator</li>
+              <li>Terraform Associate</li>
+              <li>CKA: Certified Kubernetes Administrator</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Skills & Tools</h2>
+            <ul>
+              <li>Azure, AKS, Azure DevOps</li>
+              <li>Terraform, ARM Templates</li>
+              <li>Docker, Kubernetes</li>
+              <li>Jenkins, Ansible</li>
+              <li>Git, SonarQube, JFrog</li>
+              <li>Kibana, Prometheus, Grafana</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Quick Links</h2>
+            <div class="muted">LinkedIn / GitHub / Portfolio</div>
+            <ul>
+              <li><a href="#">LinkedIn profile</a></li>
+              <li><a href="#">GitHub repositories</a></li>
+              <li><a href="#" onclick="window.print();return false;">Download / Print</a></li>
+            </ul>
+          </section>
+        </aside>
       </div>
 
-      <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>📦 CI/CD Pipeline for a Microservices App</h3>
-    <p> Built a complete DevOps pipeline to automate the deployment of a microservices-based app on AWS.Leveraged GitHub Actions, Docker, and Terraform to ensure zero-downtime deployments and infrastructure-as-code practices.</p>
-    <ul>
-      <li>Terraform for AWS provisioning</li>
-      <li>Dockerized services + Docker Hub</li>
-      <li>CI/CD using GitHub Actions</li>
-      <li>Nginx reverse proxy + basic HTTPS</li>
-    </ul>
-    <p>
-      🔗 <a href="https://github.com/rajkumar3130/mock-payment-api" target="_blank">View on GitHub</a>
-    </p>
-  </div>
-
-      <div class="project">
-        <h3>🚀 Project Complete: DevOps Task Manager 🎉</h3>
-        <p>Just wrapped up an end-to-end DevOps project from scratch:
-          <ul>
-            <li>Frontend in React (Vite)</li>
-            <li>Backend with Express.js</li>
-            <li>Dockerized both services + Nginx reverse proxy</li>
-            <li>HTTPS with Let's Encrypt (Certbot)</li>
-            <li>CI/CD pipeline via GitHub Actions</li>
-            <li>Live Deployment on AWS EC2 (Ubuntu)</li>
-            <li>Domain + SSL via GoDaddy: <a href="https://examplehub.xyz">examplehub.xyz</a></li>
-          </ul>
-          <strong>Tools used:</strong> Docker, Nginx, AWS, GitHub Actions, Certbot, GoDaddy DNS<br>
-          🔍 <a href="https://github.com/rajkumar3130/devops-task-manager">Check it out</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>🛠 Skills</h2>
-      <ul>
-        <li>AWS EC2, S3, Route 53, IAM</li>
-        <li>Docker, GitHub Actions, Nginx</li>
-        <li>Terraform, Ansible</li>
-        <li>JavaScript, Node.js, Linux</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>M.Sc. in Advanced Computer Science</strong>, University of East London — 2022</li>
-        <li><strong>Bachelors in Computer Science and Engineering</strong>, Kamala Institute of Technology and Science — 2019</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🏅 Certifications</h2>
-      <ul>
-        <li><strong>Kubernetes: Basic Architecture and First Deployment</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/E9U3SBLALRZ8">View Certificate</a></li>
-        <li><strong>AWS: Networking</strong> — <a href="https://www.linkedin.com/learning/certificates/2bc0a0d448a7052e89c6c79251ef818a8528ca31c636c5dbca3b4e1f4b95de1f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Kubernetes: Native Tools</strong> — <a href="https://www.linkedin.com/learning/certificates/9ada605de49ecc9cf19ab928e9150f1aced9341730f3da71c29e16afdf78202d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Kubernetes: The Documentary</strong> — <a href="https://www.linkedin.com/learning/certificates/d882ceb2c7f9a3677cadf4f3b9f14784a67f1140e656ec10491bd8bfe6368dce?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Kubernetes: Your First Project</strong> — <a href="https://www.linkedin.com/learning/certificates/aa9e69de1e4c9d0e838d6186547e522287bcd6df4d00309a9478cd1bcaaae811?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Learning Kubernetes</strong> — <a href="https://www.linkedin.com/learning/certificates/3d39c33fd6952eed9db980b35413956ec9c4d68fcb47938a4aaf407c8b68550e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Securing Containers and Kubernetes Ecosystem</strong> — <a href="https://www.linkedin.com/learning/certificates/168bea501063b89f6552bc9311d8609b4c00c12d5c7f97ce5de4e1bcdf8a4638?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>Containerization</strong> — <a href="">View Certificate</a></li>
-        <li><strong>Introduction to DevOps</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/SKUXQFCBVXT4">View Certificate</a></li>
-        <li><strong>Python Project for AI & Application Development</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/WWCEDVPU98FK">View Certificate</a></li>
-        <li><strong>Getting Started with Git and GitHub</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/SAMEWZQ8R94Y">View Certificate</a></li>
-        <li><strong>Hands-on Introduction to Linux Commands and Shell Scripting</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/7JQT3UR4XF7A">View Certificate</a></li>
-        <li><strong>Introduction to Agile Development and Scrum</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/5E6AA84AGBW4">View Certificate</a></li>
-        <li><strong>Introduction to Cloud Computing</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/NJ9J9SHNN5MG">View Certificate</a></li>
-        <li><strong>Python for Data Science, AI & Development</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/V3HWX2LQLTEB">View Certificate</a></li>
-        <li><strong>DevOps on AWS: Continuous Integration and Continuous Delivery</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/3PZAG3TCN4F5">View Certificate</a></li>
-        <li><strong>DevOps Foundations</strong> - <a href="https://www.linkedin.com/learning/certificates/a83a34fb2339e1f9e9929291dcff04832730a834d5c883ec51897cb7d1118493?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnExNW9LqQQyosWaYKozUzQ%3D%3D">View Certificate</a></li>
-        <li><strong>DevOps on AWS Specialization</strong> — <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3PZAG3TCN4F5">View Certificate</a></li>
-        <li><strong>DevOps on AWS: Release and Deploy</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/7YSQ74KQ79FF">View Certificate</a></li>
-        <li><strong>DevOps on AWS: Code, Build and Test</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/NZ8VJDX9HC2Z">View Certificate</a></li>
-        <li><strong>DevOps on AWS: Operate and Monitor</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/X3LM65ANVW8Y">View Certificate</a></li>
-        <li><strong>AWS Cloud Technical Essentials</strong> — <a href="https://www.coursera.org/account/accomplishments/certificate/LCDXZMS9D7LH">View Certificate</a></li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>📬 Contact</h2>
-      <ul>
-        <li><strong>Email:</strong> rajvalusa33@gmail.com</li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/rajkumar3130">github.com/rajkumar3130</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/raj-valusa-ba7508208">linkedin.com/in/raj-valusa-ba7508208</a></li>
-      </ul>
+      <footer>
+        <div class="muted">Ready to discuss Azure engineering & DevOps opportunities</div>
+        <div class="muted">© Rajkumar Valusa</div>
+      </footer>
     </div>
   </div>
 </body>
